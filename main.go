@@ -95,7 +95,7 @@ func createMessageHandler(db *sqlx.DB) echo.HandlerFunc {
 
 func main() {
 	// init database
-	db := sqlx.MustConnect("sqlite3", "skeleton.db")
+	db := sqlx.MustConnect("sqlite3", "realworld.db")
 	Migrate(db)
 
 	// init echo
